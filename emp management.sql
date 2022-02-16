@@ -13,6 +13,9 @@ create table employee(
 [Gender] varchar(10),
 )
 
+alter table employee add [security question] varchar(50);
+alter table employee add [solution] varchar(max)
+
 create table Leave(
 LeaveId int identity(100,1) constraint pk_leave primary key,
 [emp id] int constraint fk_emp foreign key references employee, 
